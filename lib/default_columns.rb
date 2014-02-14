@@ -1,5 +1,5 @@
 module DefaultColumns
-	autoload :Schema, 'default_columns/schema'
- 	autoload :Models, 'default_columns/models'
+#	autoload :Schema, 'default_columns/schema'
 end
-require 'default_columns/models/archivable'
+require 'default_columns/schema'
+require 'default_columns/models'
