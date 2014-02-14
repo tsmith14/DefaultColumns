@@ -11,7 +11,7 @@ module DefaultColumns
     def archivable(options={})
 #      default = options[:default] || false
 	  default = false
-      apply_default_column_schema :archived, Boolean, :default => default
+      apply_default_column_schema :archived, 'Boolean', :default => default
 #      apply_default_column_schema :archived_at, DateTime
     end
 
