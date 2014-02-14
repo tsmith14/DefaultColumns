@@ -7,8 +7,8 @@ require "default_columns/version"
 Gem::Specification.new do |s|
   s.name        = "default_columns"
   s.version     = DefaultColumns::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["Tyler Smith"]
+  s.email       = ["tylertsmith14@gmail.com"]
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of DefaultColumns."
   s.description = "TODO: Description of DefaultColumns."
