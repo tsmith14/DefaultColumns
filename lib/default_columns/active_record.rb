@@ -22,5 +22,5 @@ module DefaultColumns
 end
 
 ActiveRecord::Base.extend DefaultColumns::Models
-ActiveRecord::ConnectionAdapters::Table.send :include, DefaultColumns::Schema
-ActiveRecord::ConnectionAdapters::TableDefinition.send :include, DefaultColumns::Schema
+ActiveRecord::ConnectionAdapters::Table.send :include, DefaultColumns::Orm::ActiveRecord::Schema
+ActiveRecord::ConnectionAdapters::TableDefinition.send :include, DefaultColumns::Orm::ActiveRecord::Schema

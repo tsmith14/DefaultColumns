@@ -1,6 +1,7 @@
 module DefaultColumns
   # Holds schema definition for hiddenrecord model options.
   module Schema
+  
     
     # Sets the model as having hidable rows
     #
