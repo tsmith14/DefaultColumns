@@ -20,6 +20,7 @@ module DefaultColumns
     end
   end
 end
+
 ActiveRecord::Base.extend DefaultColumns::Models
 ActiveRecord::ConnectionAdapters::Table.send :include, DefaultColumns::Schema
 ActiveRecord::ConnectionAdapters::TableDefinition.send :include, DefaultColumns::Schema
