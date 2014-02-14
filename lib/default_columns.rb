@@ -3,7 +3,7 @@ require 'default_columns/schema'
 require 'default_columns/models'
 require 'default_columns/models/archivable'
 module DefaultColumns
-#	autoload :Schema, 'default_columns/schema'
-#	autoload :Models, 'default_columns/models'
+	autoload :Schema, 'default_columns/schema'
+	autoload :Models, 'default_columns/models'
 end
 
