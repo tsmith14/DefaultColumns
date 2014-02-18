@@ -4,35 +4,36 @@
 Allow for standard columns to be added to models (in addition to the normal: updated_at & created_at)
 
 #### Installation:
-* Install gem by adding `gem 'default_columns', git: 'git://github.com/tsmith14/DefaultColumns.git'` to your `GemFile` and running `bundle install`
+
+* Install gem by adding `gem 'default_columns', git: 'git://github.com/tsmith14/DefaultColumns.git'` to your `GemFile` and running `bundle install`.
+
 * When generating a new model (`rails g model MODELNAME ...`) your migration will have the following:
 
-```
-	class CreateMODELNAME < ActiveRecord::Migration
-	  def change
-	    create_table :model_name do |t|
-		    ...		
-		    t.archivable
-		    t.deletable
-		    ...
-	      t.timestamps
-	    end
-	  end
-	end
-```
+		class CreateMODELNAME < ActiveRecord::Migration
+		  def change
+		    create_table :model_name do |t|
+			    ...		
+			    t.archivable
+			    t.deletable
+			    ...
+		      t.timestamps
+		    end
+		  end
+		end
+
 	
 t.COLUMN_MODULE results in the creation of columns as mapped below. 
 
 * In your model, include the following modules like so:
 
-```
-	class MODELNAME < ActiveRecord::Base
-		# Default Column Modules
-		include DefaultColumns::Models::Archivable
-		include DefaultColumns::Models::Deletable
-		...
-	end
-```
+
+		class MODELNAME < ActiveRecord::Base
+			# Default Column Modules
+			include DefaultColumns::Models::Archivable
+			include DefaultColumns::Models::Deletable
+			...
+		end
+
 
 * After migrating your database (`rake db:migrate`), you should be good to go!
 
