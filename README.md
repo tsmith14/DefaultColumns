@@ -1,6 +1,7 @@
 ### Default Columns
 
-#### Purpose: Allow for standard columns to be added to models (in addition to the normal: updated_at & created_at)
+#### Purpose: 
+Allow for standard columns to be added to models (in addition to the normal: updated_at & created_at)
 
 #### Current Model Add-Ons:
 
