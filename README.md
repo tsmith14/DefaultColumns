@@ -23,7 +23,7 @@ Allow for standard columns to be added to models (in addition to the normal: upd
 		end
 
 	
-**Note: t.COLUMN_MODULE results in the creation of columns as mapped below.** 
+**Note: t.MODULE results in the creation of columns as stated in 'Current Modules'.** 
 
 * In your model, include the following modules like so:
 
@@ -40,7 +40,7 @@ Allow for standard columns to be added to models (in addition to the normal: upd
 
 
 
-#### Current Model Add-Ons:
+#### Current Modules:
 
 ##### Archivable:
 	
