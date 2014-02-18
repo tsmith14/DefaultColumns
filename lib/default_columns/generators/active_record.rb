@@ -17,7 +17,7 @@ module DefaultColumns
 end
 
 Rails::Generators::NamedBase.extend DefaultColumns::ActiveRecord::Generators::Base
-Rails::Generators::ActiveRecord::Model::ModelGenerator.send :include, DefaultColumns::Generators::ActiveRecord::Model::ModelGenerator
+ActiveRecord::Generators::ModelGenerator.send :include, DefaultColumns::Generators::ActiveRecord::Model::ModelGenerator
 
 
 
