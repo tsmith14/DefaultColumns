@@ -6,14 +6,19 @@ module DefaultColumns
           extend ClassMethods
         end
       end
-		
+		  
+		  module ClassMethods
+		  	# Add methods for class  
+		  end
+	  	
+	  	scope :archivable, where(:archived => true)
+	  	
+	  	# Instance Methods
 	  	def archived?
 	  		archived
 	 	  end
 	  
-	 		module ClassMethods
-	    end
-#      scope :visible, where(:hiddenrecord_is_row_hidden => true)
+	 		
 #
 #      def hidden?
 #        return hiddenrecord_is_row_hidden || false

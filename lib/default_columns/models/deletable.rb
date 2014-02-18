@@ -6,15 +6,17 @@ module DefaultColumns
           extend ClassMethods
         end
       end
-		
+		  
+		  module ClassMethods
+		  end
+		  
+		  scope :deleted, where(:deleted => true)
+		  
+		  # Instance Methods
 	  	def deleted?
 	  		deleted
 	  	end
-	  	
-	  	module ClassMethods
-	  	end
-#      scope :visible, where(:hiddenrecord_is_row_hidden => true)
-#
+
     end
   end
 end
