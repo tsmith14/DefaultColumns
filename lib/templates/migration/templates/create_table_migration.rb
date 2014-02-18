@@ -9,12 +9,9 @@ class <%= migration_class_name %> < ActiveRecord::Migration
 	<% end -%>
 <% end -%>
 
-<% if options[:archivable] %>
-	  t.archivable
-<% end -%>
-<% if options[:deletable] %>
-	  t.deletable
-<% end -%>
+	    t.archivable
+	    t.deletable
+
 <% if options[:timestamps] %>
       t.timestamps
 <% end -%>
