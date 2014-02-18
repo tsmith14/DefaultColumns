@@ -6,7 +6,8 @@ Allow for standard columns to be added to models (in addition to the normal: upd
 #### Installation:
 * Install gem by adding `gem 'default_columns', git: 'git://github.com/tsmith14/DefaultColumns.git'` to your `GemFile` and running `bundle install`
 * When generating a new model (`rails g model MODELNAME ...`) your migration will have the following:
-	
+
+```
 	class CreateMODELNAME < ActiveRecord::Migration
 	  def change
 	    create_table :model_name do |t|
@@ -18,17 +19,20 @@ Allow for standard columns to be added to models (in addition to the normal: upd
 	    end
 	  end
 	end
+```
 	
-	t.COLUMN_MODULE results in the creation of columns as mapped below. 
+t.COLUMN_MODULE results in the creation of columns as mapped below. 
 
 * In your model, include the following modules like so:
 
+```
 	class MODELNAME < ActiveRecord::Base
 		# Default Column Modules
 		include DefaultColumns::Models::Archivable
 		include DefaultColumns::Models::Deletable
 		...
 	end
+```
 
 * After migrating your database (`rake db:migrate`), you should be good to go!
 
@@ -39,38 +43,38 @@ Allow for standard columns to be added to models (in addition to the normal: upd
 ##### Archivable:
 	
 	#### Columns ###
-	* archived [Boolean]
-	* archived_at [DateTime]
+	archived [Boolean]
+	archived_at [DateTime]
 	
 	### Class Methods ###
 	
 	## Usage: ModelName.archived => returns ActiveRecord::Relation of instances where Model is archived
-	* archived
+	archived
 	
 	## Usage: ModelName.unarchived => returns ActiveRecord::Relation of instances where Model is not archived
-	* unarchived
+	unarchived
 	
 	### Instance Methods ###
 	
 	## Usage: ModelName.new.archived? => returns true if model instance is archived
-	* archived?
+	archived?
 
 	
 ##### Deletable:
 	
 	### Columns ###
-	* deleted [Boolean]
-	* deleted_at [DateTime]
+	deleted [Boolean]
+	deleted_at [DateTime]
 	
 	### Class Methods ####
 	
 	## Usage: ModelName.deleted => returns ActiveRecord::Relation of instances where Model is deleted
-	* deleted
+	deleted
 	
 	### Instance Methods ###
 	
 	## Usage: ModelName.new.deleted? => returns true if model instance is deleted
-	* deleted?
+	deleted?
 	
 	
 	
