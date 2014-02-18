@@ -1,6 +1,6 @@
 #require 'rails/generators'
 #require 'rails/generators/active_record'
-#require 'rails/generators/active_record/model/model_generator'
+require 'rails/generators/active_record/model/model_generator'
 
 #require 'default_columns/generators/active_record/model/model_generator'
 
