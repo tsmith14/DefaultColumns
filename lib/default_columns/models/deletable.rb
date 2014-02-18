@@ -7,12 +7,14 @@ module DefaultColumns
         end
       end
 		  
+		  included do
+		  	scope :deleted, where(:deleted => true)
+		  end
+		   
 		  module ClassMethods
 		  	# Add methods for class  
 		  
-		  	scope :deleted, where(:deleted => true)
-		  end
-		  
+		  end		  
 
 		  
 		  # Instance Methods

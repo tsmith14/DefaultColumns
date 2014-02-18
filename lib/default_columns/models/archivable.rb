@@ -7,10 +7,12 @@ module DefaultColumns
         end
       end
 		  
+		  included do
+		  	scope :archivable, where(:archived => true)		  	
+		  end
+		  
 		  module ClassMethods
 		  	# Add methods for class  
-		  
-		  	scope :archivable, where(:archived => true)		  	
 		  end
 	  	
 	  	
