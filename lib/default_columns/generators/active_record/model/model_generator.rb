@@ -5,7 +5,7 @@ module DefaultColumns
   	module Generators # :nodoc:
     	module ModelGenerator # :nodoc:
     	
-    	  source_root File.expand_path("../migration/templates", __FILE__)
+#    	  source_root File.expand_path("../../migration/templates", __FILE__)
     	   
       	class_option :archivable,  :type => :boolean
       	class_option :deletable, :type => :boolean
