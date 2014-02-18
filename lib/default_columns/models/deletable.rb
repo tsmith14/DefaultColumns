@@ -6,14 +6,13 @@ module DefaultColumns
           extend ClassMethods
         end
       end
-		  
-		  included do
-		  	scope :deleted, where(:deleted => true)
-		  end
-		   
+		  		   
 		  module ClassMethods
 		  	# Add methods for class  
-		  
+		  	def deleted
+		  		where(:deleted => true)
+		  	end
+		  	
 		  end		  
 
 		  

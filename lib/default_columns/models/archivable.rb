@@ -6,13 +6,14 @@ module DefaultColumns
           extend ClassMethods
         end
       end
-		  
-		  included do
-		  	scope :archivable, where(:archived => true)		  	
-		  end
-		  
+		  		  
 		  module ClassMethods
-		  	# Add methods for class  
+		  	# Add methods for class 
+		  	
+		  	def archived
+		  		where(:archived => true)
+		  	end 
+		  	
 		  end
 	  	
 	  	
