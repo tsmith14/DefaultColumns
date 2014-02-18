@@ -7,9 +7,12 @@ module DefaultColumns
         end
       end
 		
-	  def archived?
-	  	archived
-	  end
+	  	def archived?
+	  		archived
+	 	  end
+	  
+	 		module ClassMethods
+	    end
 #      scope :visible, where(:hiddenrecord_is_row_hidden => true)
 #
 #      def hidden?

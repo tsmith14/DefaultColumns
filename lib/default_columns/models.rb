@@ -29,3 +29,6 @@ module DefaultColumns
 
   end
 end
+
+require 'models/archivable'
+require 'models/deletable'
