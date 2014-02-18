@@ -10,8 +10,3 @@ module DefaultColumns
 	  
 end
 require 'default_columns/active_record'
-#require 'default_columns/generators/active_record'
-#require 'default_columns/schema'
-#require 'default_columns/models'
-#require 'default_columns/models/archivable'
-#require 'default_columns/models/deletable'

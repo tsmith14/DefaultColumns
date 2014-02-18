@@ -1,3 +1,12 @@
+# Default Column Model: Archivable
+# Example Use:
+# 
+#		model ModelName
+#			include DefaultColumns::Model::Archivable
+#			...
+#		end
+#
+
 module DefaultColumns
   module Models
     module Archivable
@@ -8,43 +17,37 @@ module DefaultColumns
       end
 		  		  
 		  module ClassMethods
-		  	# Add methods for class 
+		  	## Add methods for class 
 		  	
+		  	#Usage: Model.archived => (Active_Record::Relation)
 		  	def archived
 		  		where(:archived => true)
 		  	end 
 		  	
+		  	def unarchived
+		  		where(:archived => false)
+		  	end
+		  	
 		  end
 	  	
 	  	
-	  	# Instance Methods
+	  	## Instance Methods
+	  	
+	  	# Usage: Model.new.archived?  => (true/false)
 	  	def archived?
 	  		archived
 	 	  end
 	  
-	 		
-#
-#      def hidden?
-#        return hiddenrecord_is_row_hidden || false
-#      end
-#
-#      def hide
-#        hiddenrecord_is_row_hidden = true
-#      end
-#
-#      def hide!
-#        hiddenrecord_is_row_hidden = true
-#        save!
-#      end
-#
-#      def unhide
-#        hiddenrecord_is_row_hidden = false
-#      end
-#
-#      def unhide!
-#        hiddenrecord_is_row_hidden = false
-#        save!
-#      end
+#	 		def archive
+#	 			archive = true
+#	 			archived_at = Time.now
+#	 		end
+#	 		
+#	 		def archive!
+#	 			self.archive
+#	 			save!
+#	 		end
+
 
     end
   end

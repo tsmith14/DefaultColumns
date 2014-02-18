@@ -1,3 +1,12 @@
+# Default Column Model: Deletable
+# Example Use:
+# 
+#		model ModelName
+#			include DefaultColumns::Model::Deletable
+#			...
+#		end
+#
+
 module DefaultColumns
   module Models
     module Deletable
