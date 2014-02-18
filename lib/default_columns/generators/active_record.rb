@@ -1,19 +1,21 @@
-require 'rails/generators/active_record'
+require 'rails/generators/active_record/model/model_generator'
+
+#require 'rails/generators/active_record'
 #require 'active_record/migration/templates/create_table_migration'
 #require 'active_record'
 
 module DefaultColumns
   module ActiveRecord
   	module Generators # :nodoc:
-      class Base < Rails::Generators::NamedBase # :nodoc:
+      module Base  # :nodoc:
 #      include ActiveRecord::Generators::Migration
       end
     end
   end
 end
 
-#Rails::Generators::NamedBase.extend DefaultColumns::ActiveRecord::Generators::Base
-Rails::Generators::ModelGenerator.send :include, DefaultColumns::Generators::ActiveRecord::Model::ModelGenerator
+Rails::Generators::NamedBase.extend DefaultColumns::ActiveRecord::Generators::Base
+Rails::Generators::ActiveRecord::Model::ModelGenerator.send :include, DefaultColumns::Generators::ActiveRecord::Model::ModelGenerator
 
 
 

@@ -3,7 +3,7 @@
 module DefaultColumns
 	module ActiveRecord
   	module Generators # :nodoc:
-    	class ModelGenerator < ActiveRecord::Generators::Base # :nodoc:
+    	module ModelGenerator # :nodoc:
     	
     	  source_root File.expand_path("../migration/templates", __FILE__)
     	   
