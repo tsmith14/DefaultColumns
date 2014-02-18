@@ -30,5 +30,5 @@ module DefaultColumns
   end
 end
 
-require 'models/archivable'
-require 'models/deletable'
+require 'default_columns/models/archivable'
+require 'default_columns/models/deletable'
