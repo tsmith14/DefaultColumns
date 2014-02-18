@@ -10,9 +10,9 @@ Gem::Specification.new do |s|
   s.authors     = ["Tyler Smith"]
   s.email       = ["tylertsmith14@gmail.com"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of DefaultColumns."
-  s.description = "TODO: Description of DefaultColumns."
-
+  s.summary     = "Allow for standard columns to be added to models (in addition to the normal: updated_at & created_at)"
+  s.description = "Allow for standard columns to be added to models (in addition to the normal: updated_at & created_at). \n Current Model Add-Ons:
+  	Archivable (archived [Boolean], archived_at [DateTime]), Deletable (deleted [Boolean], deleted_at [DateTime])"
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
