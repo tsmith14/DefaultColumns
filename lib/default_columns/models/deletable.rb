@@ -8,9 +8,12 @@ module DefaultColumns
       end
 		  
 		  module ClassMethods
+		  	# Add methods for class  
+		  
+		  	scope :deleted, where(:deleted => true)
 		  end
 		  
-		  scope :deleted, where(:deleted => true)
+
 		  
 		  # Instance Methods
 	  	def deleted?

@@ -9,9 +9,10 @@ module DefaultColumns
 		  
 		  module ClassMethods
 		  	# Add methods for class  
+		  
+		  	scope :archivable, where(:archived => true)		  	
 		  end
 	  	
-	  	scope :archivable, where(:archived => true)
 	  	
 	  	# Instance Methods
 	  	def archived?
