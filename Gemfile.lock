@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    default_columns (0.0.1)
+    default_columns (0.0.2)
       rails (~> 4.0.2)
 
 GEM

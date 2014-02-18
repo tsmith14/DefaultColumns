@@ -2,6 +2,8 @@ require 'rails/generators'
 require 'rails/generators/active_record'
 require 'rails/generators/active_record/model/model_generator'
 
+require 'migration/model/model_generator'
+
 #require 'rails/generators/active_record'
 #require 'active_record/migration/templates/create_table_migration'
 #require 'active_record'
@@ -17,7 +19,7 @@ module DefaultColumns
 end
 
 Rails::Generators::NamedBase.extend DefaultColumns::ActiveRecord::Generators::Base
-ActiveRecord::Generators::ModelGenerator.send :include, DefaultColumns::Generators::ActiveRecord::Model::ModelGenerator
+ActiveRecord::Generators::ModelGenerator.send :include, DefaultColumns::ActiveRecord::Model::ModelGenerator
 
 
 
