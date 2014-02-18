@@ -1,4 +1,4 @@
-require 'default_columns/generators/active_record'
+#require 'default_columns/generators/active_record'
 
 module DefaultColumns
 	module ActiveRecord
