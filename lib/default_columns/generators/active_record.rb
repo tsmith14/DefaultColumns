@@ -12,7 +12,7 @@ module DefaultColumns
 end
 
 #Rails::Generators::NamedBase.extend DefaultColumns::ActiveRecord::Generators::Base
-Rails::Generators::ActiveRecord::Model::ModelGenerator.send :include, DefaultColumns::Generators::ActiveRecord::Model::ModelGenerator
+Rails::ActiveRecord::Model::ModelGenerator.send :include, DefaultColumns::Generators::ActiveRecord::Model::ModelGenerator
 
 
 
