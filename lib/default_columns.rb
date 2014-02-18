@@ -4,7 +4,7 @@ module DefaultColumns
 	
 	class Railtie < Rails::Railtie
 		config.app_generators do |g|
-	  	g.templates.unshift File::expand_path('default_columns/templates', __FILE__)
+	  	g.templates.unshift File::expand_path('../templates', __FILE__)
 	  end 
 	end
 	  
