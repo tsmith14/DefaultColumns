@@ -1,3 +1,4 @@
+require 'rails/generators/active_record'
 #require 'active_record/migration/templates/create_table_migration'
 #require 'active_record'
 
