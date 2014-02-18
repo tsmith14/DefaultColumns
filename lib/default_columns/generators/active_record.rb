@@ -2,7 +2,7 @@
 #require 'rails/generators/active_record'
 #require 'rails/generators/active_record/model/model_generator'
 
-require 'default_columns/generators/active_record/model/model_generator'
+#require 'default_columns/generators/active_record/model/model_generator'
 
 #require 'rails/generators/active_record'
 #require 'active_record/migration/templates/create_table_migration'
@@ -12,7 +12,7 @@ module DefaultColumns
   module ActiveRecord
   	module Generators # :nodoc:
       module Base  # :nodoc:
-      	include ActiveRecord::Generators::Migration
+#      	include ActiveRecord::Generators::Migration
       end
     end
   end
