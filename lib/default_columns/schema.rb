@@ -12,7 +12,13 @@ module DefaultColumns
 #      default = options[:default] || false
 	  default = false
       apply_default_column_schema :archived, 'Boolean', :default => default
-#      apply_default_column_schema :archived_at, DateTime
+      apply_default_column_schema :archived_at, 'DateTime'
+    end
+    
+    def deletable(options={})
+    	default = false
+    	apply_default_column_schema :deleted, 'Boolean', :default => default
+    	apply_default_column_schema :deleted_at, 'DateTime'
     end
 
 #    # Sets the model to record the timestamp when a row was hidden
