@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = DefaultColumns::VERSION
   s.authors     = ["Tyler Smith"]
   s.email       = ["tylertsmith14@gmail.com"]
-  s.homepage    = "tylersmith.co"
+  s.homepage    = "http://tylersmith.co"
   s.summary     = "Allow for standard columns to be added to models (in addition to the normal: updated_at & created_at)"
   s.description = "Allow for standard columns to be added to models (in addition to the normal: updated_at & created_at). \n Current Model Add-Ons:
   	Archivable (archived [Boolean], archived_at [DateTime]), Deletable (deleted [Boolean], deleted_at [DateTime])"
