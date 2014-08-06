@@ -6,13 +6,13 @@ module DefaultColumns
  
     def archivable(options={})
 	  	default = false
-      apply_default_column_schema :archived, 'Boolean', :default => default
+      apply_default_column_schema :archived, 'Boolean', :default => default, :null => false
       apply_default_column_schema :archived_at, 'DateTime'
     end
     
     def deletable(options={})
     	default = false
-    	apply_default_column_schema :deleted, 'Boolean', :default => default
+    	apply_default_column_schema :deleted, 'Boolean', :default => default, :null => false
     	apply_default_column_schema :deleted_at, 'DateTime'
     end
 
